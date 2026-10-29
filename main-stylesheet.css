@@ -3,3 +3,10 @@
     margin-left : 200px;
     margin-right : 200px;
 }
+h1.bigHeading {
+    font-size : 60px;
+}
+body{
+    background-color: black;
+    color : forestgreen;
+}
