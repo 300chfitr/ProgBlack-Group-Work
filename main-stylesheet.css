@@ -8,5 +8,9 @@ h1.bigHeading {
 }
 body{
     background-color: black;
-    color : forestgreen;
+    color : limegreen;
+    margin-top : 50px;
+}
+h1 {
+    margin-top:35px;
 }
