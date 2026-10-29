@@ -14,3 +14,10 @@ body{
 h1 {
     margin-top:35px;
 }
+.thinParagraphs{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+dt {
+    font-size: 24px;
+}
