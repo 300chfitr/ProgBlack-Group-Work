@@ -33,3 +33,9 @@ dt {
     position:absolute;
     width:300px;
 }
+a:link {
+    color:blue;
+}
+a:visited {
+    color:blue;
+}
