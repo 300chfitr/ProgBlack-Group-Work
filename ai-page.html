@@ -8,14 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="main-stylesheet.css">
+    <script src="ai-page.js"></script>
     <style>
         :root {
             --bs-body-font-family: "Geist", system-ui, sans-serif;
             --bs-font-mono: "Geist Mono", ui-monospace, monospace;
         }
     </style>
+    <script language="javascript">
+        function OnLoad()
+        {
+            ChangeImage();
+        }
+    </script>
 </head>
-<body>
+<body onload="OnLoad()">
+    <!--Side images-->
+    <img src="Images/aiImage1.jpg" class="floatingImage thinBorder" style="top:1000px; left:80%;"/>
+    <img src="Images/aiImage2.jpg" class="floatingImage thinBorder" style="top:1900px; left:10%;"/>
+
+
+    <!--Main content-->
     <div class="centerText">
         <h1 class="bigHeading">What is AI?</h1>
         <p>
@@ -29,7 +42,7 @@
             Even LLMs eventually come down to these systems, through the representation of words as vectors. These vectors are used to interpret input
             and generate outputs.
         </p>
-        <img src="Images/neural-network-diagram.avif" width="750px">
+        <img src="Images/neuralNetworkGraphic.png" style="width:750px" class="thinBorder">
 
         <h1>What's wrong with it?</h1>
 
@@ -46,6 +59,28 @@
                     AI has caused many many job losses, across many sectors. Typically, large companies will lay off hundreds or thousands of
                     people with the intention of using AI to replace them. However, someone has to operate/supervise this AI so not only do
                     many people lose their jobs but those who keep them get an increased workload for the same pay.
+                </dd>
+            </dl>
+        </div>
+        <figure>
+            <img src="" id="changingImage" class="thinBorder" style="height:500px;" /><!--Not in thinParagraphs div as it puts the image off center-->
+            <figcaption>A series of graphs about AI usage and power</figcaption>
+        </figure>
+        <h1 style="margin-top:50px">What can it do for us?</h1>
+        <div class="thinParagraphs">
+            <dl>
+                <dt>Medical use</dt>
+                <dd>
+                    AI is very powerful for appilcations such as pattern recognition. This is very helpful in a medical field as it can be 
+                    fed on medical data and diagnoses to train it to predict medical conditions based on prior information. This is very helpful as
+                    it means that diseases can be recognised and prevented before they appear. As well as this, it can be used in recognising 
+                    already existing conditions (such as tumours), which is a very powerful tool for diagnosing patients.
+                </dd>
+                <dt>Maths and science</dt>
+                <dd>
+                    AI has a very strong analytical capability. This can be applied in fields such as maths and science. For example, it
+                    recently solved the Navier-Stokes problem (although it's disputed by some whether it was AI). As well as this, it has
+                    a lot of possible applications in fields such as chemical and genetic engineering.
                 </dd>
             </dl>
         </div>
